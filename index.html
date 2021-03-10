@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+    rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <link rel="icon" href="images/fav.ico">
+  <title>The Original Pokedex</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+    <nav>
+      <img src="images/fav.ico" alt="">
+      <h2>The Original Pokedex</h2>
+    </nav>
+  </div>
+  </header>
+  <!-- Show case -->
+  <section class="showcase">
+    <div class="showcase-content">
+      <img src="images/fav.ico" alt="">
+      <h1>Pokedex, One stop solution to all your pokemon problems!</h1>
+      <p>Pokedex, levelling your game up since ages.
+        Know the world of pokemons at your finger tips.
+        Click explore and learn about your favorite types.
+        Tap the Poke-card to know the abilities of your favorite pokemons
+      </p>
+      <div class="dropdown">
+        <button class="dropbtn" id="dropbtn">Explore All</button>
+        <div class="dropdown-content">
+        <a onclick="filterPokemon('')">Explore All</a>
+        <a onclick="filterPokemon('grass')">Grass Type</a>
+        <a onclick="filterPokemon('bug')">Bug Type</a>
+        <a onclick="filterPokemon('poison')">Poison Type</a>
+        <a onclick="filterPokemon('fire')">Fire Type</a>
+        <a onclick="filterPokemon('water')">Water Type</a>
+        <a onclick="filterPokemon('flying')">Flying Type</a>
+        <a onclick="filterPokemon('normal')">Normal Type</a>
+        <a onclick="filterPokemon('electric')">Electric Type</a>
+        <a onclick="filterPokemon('ground')">Ground Type</a>
+        <a onclick="filterPokemon('fairy')">Fairy Type</a>
+        <a onclick="filterPokemon('fighting')">Fighting Type</a>
+        <a onclick="filterPokemon('psychic')">Psychic Type</a>
+        <a onclick="filterPokemon('rock')">Rock Type</a>
+        <a onclick="filterPokemon('steel')">Steel Type</a>
+        <a onclick="filterPokemon('ice')">Ice Type</a>
+        <a onclick="filterPokemon('dragon')">Dragon Type</a>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">Explore</a> -->
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about m-t">
+    <div class="container">
+      <h2 class="m-t">The Original Pokedex</h2>
+      <div class="container2">
+        <ul id="pokedex"></ul>
+      </div>
+    </div>
+  </section>
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <a class="popup-close" id="popup-close" onclick="closePopup()">X</a>
+      <div class="popup-photo">
+        <h1 id="photo-heading"></h1>
+        <img id="popup-photo">
+      </div>
+      <div class="popup-text" id="popup-text">
+        <h2 id="popup-ability"></h2>
+        <ul id="ability-list"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Copyright © since 2021 by Ghanashri M</p>
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>
